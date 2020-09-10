@@ -10,10 +10,10 @@ const getRandomInt = (max) => {
 
 export const newCard = () => (dispatch) => {
     dispatch({type: API_CALL});
-    axios.get("https://api.magicthegathering.io/v1/cards")
+    axios.get("https://api.magicthegathering.io/v1/cards?supertypes=legendary&types=creature")
     .then((res)=>{
         let random = getRandomInt(99)
-        console.log(res.data.cards[random]);
+        console.log(res)
         dispatch({type: NEW_CARD_SUCCESS, payload: res.data.cards[random]})
     })
     .catch((err)=>{

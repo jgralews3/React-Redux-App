@@ -41,7 +41,21 @@
   text-align: center;
 }
 
-button {
+nav {
   background: lightcoral;
   border-radius: 20px;
+  border: 1px solid black;
+  text-decoration: none;
+  text-align: center;
+  /* margin: 30px; */
 }
+
+a {
+  margin: 30px;
+  text-decoration: none;
+}
+
+a:visited{
+  color: black
+}
+
