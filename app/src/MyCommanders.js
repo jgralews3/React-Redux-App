@@ -8,8 +8,7 @@ function MyCommanders (props){
             <h2>Search My Commanders</h2>
             {props.commanders.map((commander) => {
                 return(
-                <p>{commander.cardname})</p>;
-                console.log("hello")
+                <p>{commander.cardname})</p>
                 )
                 })}
             {/* <p>{props.commanders[0].cardName}</p> */}
